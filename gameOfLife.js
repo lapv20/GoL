@@ -43,11 +43,15 @@
 	}
 	
 	function play() {
-		refreshIntervalId = setInterval(function(){ change() }, 1000);
+		$('#play').attr('class','btn btn-disable');
+		$('#stop').attr('class','btn btn-danger');
+		refreshIntervalId = setInterval(function(){ change() }, 500);
 		
 	}
 	
 	function stop() {
+		$('#stop').attr('class','btn btn-disable');
+		$('#play').attr('class','btn btn-primary');
 		clearInterval(refreshIntervalId)
 	}
 	
