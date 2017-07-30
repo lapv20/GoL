@@ -5,18 +5,17 @@
 		createTable("map");
 	});
 	
-	var SIZE = 40;
+	var SIZE = 60;
 	var refreshIntervalId=null;
 	var isPlay = false;
 
 	function createTable(id) {
 		var table = $("#"+id);
-		var i,j;
+		var i;
 		
 		for(i = 1; i <= SIZE; i++) {
 			table.append(createRow(SIZE,i));
 		}
-		
 	}
 	
 	function createRow(size,id) {
@@ -31,7 +30,6 @@
 		}
 		return tr;
 	}
-	
 	
 	function createElement(type, id) {
 		var onClick = "", attr = "";
