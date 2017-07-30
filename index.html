@@ -5,24 +5,22 @@
 		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		crossorigin="anonymous"></script>
 <script src="gameOfLife.js"></script>
-<!-- 
-<link rel="stylesheet" href="bootstrap.min.css">
-<link rel="stylesheet" href="bootstrap-theme.min.css">
-<script src="bootstrap.min.js"></script>
- -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+
 <style>
 	.live {
 		padding: 10px;
 		background-color: green;
 	}
-	
 	.death {
 		padding: 10px;
-		background-color: black;
+		background-color: lightgray;
 	}
-	
-	table {
-		background:grey;
+	table, th, tr, td {
+		border-collapse: initial !important;
+		border: 1px solid white;
 	}
 </style>
 
@@ -30,10 +28,19 @@
 
 <body>
 	<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<p class="text-center h3 text-upper text-info">Game of Life</p>
+		</div>
+	</div>
 		<div class="row">
-			<button class="btn btn-default" onclick="play()" id="play"> play</button>
-			<button class="btn btn-default" onclick="stop()" id="stop"> stop</button>
-			<button class="btn btn-default" onclick="nextStep()"> Next step</button>
+			<div class="col-lg-12">
+				<p class="text-center">
+					<button class="btn btn-default" onclick="play()" id="play"> play</button>
+					<button class="btn btn-default" onclick="stop()" id="stop"> stop</button>
+					<button class="btn btn-default" onclick="nextStep()"> Next step</button>
+				</p>
+			</div>
 		</div>
 		<div class="clearfix">&nbsp;&nbsp;</div>
 		<div class="row">
